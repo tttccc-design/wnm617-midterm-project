@@ -1,0 +1,136 @@
+body{
+
+	background: url("../img/marble3.jpg");
+}
+.calculator-box{
+	margin-top: 100px;
+}
+.box1{
+   background-color:#303030;;
+   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 15px  ;
+
+}
+.country-imge{
+
+	max-width:100px;
+}
+.footer{
+ height:40px;
+   width:100%;
+   background:#303030;;
+	/*position:fixed;
+   left:0;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:#999;*/
+}
+
+	
+/*caculator*/
+.container2 {
+
+	width:100%;
+	background: url('../img/marble3.jpg');
+margin:0 auto;
+	background-size: cover;
+	background-color:#303030;
+	font-family: Tahoma;
+}
+
+.container-ca {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	width: 80%;
+	margin:0 auto;
+}
+
+
+#display {
+	display: block;
+	margin: 15px auto;
+	height: 42px;
+	width: 100%;
+	padding: 0 10px;
+	border-radius: 4px;
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #FFF;
+	border-left: 2px solid #FFF;
+	background-color: #FFF;
+	
+	font-size: 28px;
+	color: #666;
+	text-align: right;
+	font-weight: 400;
+}
+
+
+
+.mathButtons {
+	opacity: 80%;
+    width:23.7%;
+	height: 45px;
+	color: white;
+	 border: 1px solid white;
+	
+	background-color: rgba(71,72,87,0.8);
+	
+	
+}
+
+.blocks {
+	height: 45px;
+	 background: rgba(33,37,31,0.8);
+    border: 1px solid white;
+    width: 23.7%;
+    color: white;
+	
+}
+
+.blocks:hover,
+.mathButtons:hover,
+#clearButton:hover {
+	background-color: #FFBA75;
+	
+}
+
+#clearButton {
+	height: 45px;
+	width:23.5%;
+	color: #FFF;
+	
+	background-color: #D20000;
+
+	
+}
+
+/*log in */
+
+.dialog-1{
+
+	width:1000px !important;
+	background-color: white;
+}
+
+
+#signin
+{
+  padding:5px;
+  margin:10px;
+
+}
+#signout
+{
+  padding:5px;
+  margin:10px 10px 10px 0px;
+
+}
+.list-end{
+
+	float: right;
+}

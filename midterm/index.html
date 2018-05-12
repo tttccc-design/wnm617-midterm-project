@@ -1,0 +1,311 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css" >
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/grid.css">
+       
+       
+    </head>
+<body>
+
+  <div class="container2 fixed-top" >
+
+      <div class="box1">
+          
+
+          <div class="container " >
+           <div class="row" >
+
+              <div class="col-6 col-md-6 justify-content-start">
+             <div class=" title-type" type="image" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            
+                    <img src="img/6.png" alt="" style="width:50px; height:50px;">
+        
+            </div>
+            </div>
+        <div class="col-6 col-md-6 justify-content-end " >
+            
+       <button id="laucher" class="list-end">Sign in/up</button>
+    
+       </div>
+
+     <div id="dialog-1" class="dialog-style" title="My Account">
+       <div class="container" >
+         <div class="col-md-12 col-mad-offset-4 col-sm-10">
+           <div id="signupform" role="form">
+             <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" id="form-email" class="form-control" placeholder="Enter your Email">
+             </div>
+              <div class="form-group">
+              <label for="">password</label>
+              <input type="password" id="form-password" class="form-control" placeholder="Enter your password">
+             </div>
+        <div class="photo">
+          <img src="" id="image_URL" style="width: 100px; height: 100px;">
+        </div>
+
+        <br><br>
+
+             <input type="submit" id="signup" class="btn btn-outline-dark text-white" value="sign up" onclick="handleSignUp();">
+       
+
+              <input type="submit" id="signin" class="btn btn-outline-dark text-white" value="sign in" onclick="handleSignIn();">
+          
+
+             <input type="submit" id="signout" class="btn btn-outline-dark text-white" value="sign out" onclick="handleSignOut();">
+
+              
+             <input type="submit" id="fblogin" class="btn btn-outline-dark text-white" value="Facebook login" onclick="handleFBlogin();">
+
+
+
+
+              </div>
+
+           </div>
+       </div>
+      </div>
+
+    </div>
+    </div>
+                
+
+
+          
+    </div>
+  </div>
+ </div>
+   
+
+ 
+
+<!--caculator learning from youtube-->
+<div class="container calculator-box">
+ <div class="row">
+  <div  class="col-md-6">
+ 
+
+   <div class="collapse " id="collapseExample">
+    <div class="container-ca">
+
+     <form name="calculator" class="form-c">
+       <input id="display" type="text" name="display" readonly>
+
+       <input id="seven" class="button blocks" type="button"  value="7" >
+       <input id="eight" class="button blocks" type="button"  value="8" >
+      <input id="nine" class="button blocks" type="button"  value="9" >
+      <input id="plus" class="button mathButtons" type="button"   value="+" >
+      <br>
+      <input id="four" class="button blocks" type="button"  value="4" >
+      <input id="five" class="button blocks" type="button"  value="5" >
+      <input id= "six" class="button blocks" type="button"  value="6" >
+      <input id="minus" class="button mathButtons" type="button"   value="-" >
+      <br>
+      <input id="one" class="button blocks"  type="button" value="1" >
+      <input id="two" class="button blocks" type="button" value="2" >
+      <input id="three" class="button blocks" type="button" value="3" >
+      <input id="time" class="button mathButtons" type="button"   value="*">
+      <br>
+
+      <input id="clearButton" class="button" type="button" value="C" >
+      <input id="zero" class="button blocks" type="button"  value="0" >
+
+      <input id="equal" class="cal-button mathButtons" type="button" value="=" >
+      <input id="divid" class="button mathButtons" type="button"  value="/">
+    </form>
+ 
+</div>
+</div>
+</div>
+
+
+<!--show the table-->
+
+<div class="col-12 col-md-6">
+  <div class="row">
+    <table id="cart" class="table table-hover table-condensed " >
+       
+        </thead>
+          <tbody id="aa">
+            <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="img/gb.jpg"  class="img-responsive country-imge"></div>
+                  <div class="col-sm-10">
+                    
+                  </div>
+                </div>
+              </td>
+             
+              <td data-th="Quantity">
+              
+              </td>
+              <td data-th="Subtotal" class="text-center">
+                
+                <input type="text" id="GBP" class="text-center" value="" size="10" >
+               <label for="GBP" class="text-white"> GBP </label>
+                
+              </td>
+              
+            </tr>
+        
+            <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="img/us.jpg"  class="img-responsive country-imge"></div>
+                  <div class="col-sm-10">
+                    
+                  </div>
+                </div>
+              </td>
+             
+              <td data-th="Quantity">
+              
+              </td>
+              <td data-th="Subtotal" class="text-center">
+                
+                <input type="text" id="USD" class="text-center" value="" size="10"  >
+               <label for="USD" class="text-white"> USD </label>
+                
+              </td>
+              
+            </tr>
+
+              <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="img/eu.jpg" class="img-responsive country-imge"></div>
+                  <div class="col-sm-10">
+                    
+                  </div>
+                </div>
+              </td>
+             
+              <td data-th="Quantity">
+              
+              </td>
+              <td data-th="Subtotal" class="text-center">
+                
+                 <input type="text" id="EUR" class="text-center" value="" size="10"  >
+               <label for="EUR" class="text-white"> EUR </label>
+                
+              </td>
+              </tr>
+
+             
+             <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="img/cad.jpg" class="img-responsive country-imge"/></div>
+                  <div class="col-sm-10">
+                    
+                  </div>
+                </div>
+              </td>
+             
+          <td data-th="Quantity">
+              
+              </td>
+              <td data-th="Subtotal" class="text-center">
+                
+                <input type="text" id="CAD" class="text-center" value="" size="10"  >
+               <label for="CAD" class="text-white"> CAD </label>
+             
+              </td>
+              </tr>
+
+
+              <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="img/au.jpg"  class="img-responsive country-imge"/></div>
+                  <div class="col-sm-10">
+                    
+                  </div>
+                </div>
+              </td>
+              
+
+            <td data-th="Quantity">
+                </td>
+              <td data-th="Subtotal" class="text-center">
+                
+                <input type="text" id="AUD" class="text-center" value="" size="10" >
+               <label for="AUD" class="text-white"> AUD </label>
+                </td>
+              
+              </tr>
+
+
+              
+
+              
+
+          </tbody>
+
+     
+        </table>
+  </div>
+
+
+</div>
+
+
+
+
+</div> 
+
+</div>
+
+<br>
+
+
+   
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous">
+            </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDM6wGbjP9HhdtN8MsS7R1uTMBpLXEIfNI",
+    authDomain: "first-try-c06a9.firebaseapp.com",
+    databaseURL: "https://first-try-c06a9.firebaseio.com",
+    projectId: "first-try-c06a9",
+    storageBucket: "first-try-c06a9.appspot.com",
+    messagingSenderId: "323179460452"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="auth.js"></script>
+
+
+ 
+
+
+        <script src="js/function.js"></script>
+        <script src="js/currency.js"></script>
+         <script src="auth.js"></script>
+    </body>
+</html>

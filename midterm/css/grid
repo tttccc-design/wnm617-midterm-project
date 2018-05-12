@@ -1,0 +1,59 @@
+@media (min-width:760px){
+   .collapse{``
+   	display: block;
+   }
+
+}
+
+@media (max-width:576px){
+  .form-c{
+    width:100%;
+    height:;
+    padding:0;
+
+   }
+  
+ .container-ca {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	width: 100%;
+	margin:0 auto;
+}
+
+
+    
+    .container2{
+        padding: 0;
+    	width:100%;}
+    .country-imge {
+
+    	width:70px;
+
+   
+    }
+
+     body {
+		background: url("../img/marble3.jpg");
+	background-color: #424242;
+		background-size: cover;
+	
+}
+
+
+
+
+   .footer {position:fixed;
+   left:0;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:#303030;}
+
+   .container2 {
+	background-image-display: none;
+	
+}
+
+	}

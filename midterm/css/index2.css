@@ -1,0 +1,28 @@
+#s1, #s2, #s3{
+
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	width:20%;
+}
+
+#s1 li, #s2 li, #s3 li{
+
+	margin: 3px;
+	padding:0.4em;
+	font-size: 16px;
+	height: 18px;
+
+}
+.ui-widget-content{
+
+	background: red;
+	border:1px solid white;
+	color:#333333;
+
+}
+#s1 .ui-selected, #s2 .ui-selected, #s3 .ui-selected{
+
+	background:#EEEEEE;
+	color:gray;
+}

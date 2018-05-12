@@ -1,0 +1,42 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" >
+    </head>
+      <body>
+     <script >
+      $(function(){
+$("#loader").click(function(){
+    $.getJSON('data.json', function(jd) {
+        $("#datastage").html('<p> Name:' + jd.zipcode + '</p>');
+     
+    });
+
+    });
+
+
+
+    </script>
+
+
+<p>CLick button to load JSON data</p>
+<div id="datastage">
+  
+
+
+
+</div>
+<input type="button" id="loader" value="load data" >
+        <!--JS-->
+
+
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+
+
+         </body>
+
+         </html>
